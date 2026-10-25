@@ -1598,3 +1598,110 @@ button {
     font-size: 0.9rem;
   }
 }
+
+/* ==========================================================================
+   PORTAL / HUB PAGE STYLES (HOME /)
+   ========================================================================== */
+.hub-hero-section {
+  padding: 56px 0 48px 0;
+  text-align: center;
+  background: url('/images/backgrounds/01-hero-spa.jpg') center top / cover no-repeat, var(--c-cream);
+  border-bottom: 1px solid var(--c-beige-border);
+}
+
+.hub-hero-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.hub-grid-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding: 56px 0 72px 0;
+}
+
+@media (min-width: 860px) {
+  .hub-grid-projects {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+}
+
+.hub-card {
+  background-color: var(--c-white);
+  border: 1.5px solid var(--c-beige-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 18px rgba(24, 55, 43, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.hub-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--c-green-comp);
+  box-shadow: 0 14px 32px rgba(24, 55, 43, 0.12);
+}
+
+.hub-card-featured {
+  border-color: rgba(185, 87, 60, 0.35);
+  box-shadow: 0 8px 24px rgba(185, 87, 60, 0.08);
+}
+
+.hub-card-featured:hover {
+  border-color: var(--c-terracotta);
+  box-shadow: 0 16px 36px rgba(185, 87, 60, 0.16);
+}
+
+.hub-card-media {
+  margin-bottom: 24px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: #ebdccb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hub-card-media img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hub-card-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--c-dark-green);
+  margin: 12px 0 10px 0;
+  line-height: 1.25;
+}
+
+.hub-card-desc {
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: #384b40;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.hub-card-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.hub-upcoming-box {
+  background-color: #fdfaf6;
+  border: 1.5px dashed var(--c-beige-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.95;
+}
+

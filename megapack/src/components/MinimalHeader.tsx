@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 export const MinimalHeader: React.FC = () => {
   return (
     <header className="site-header" role="banner">
       <div className="lp-container">
-        <div className="header-brand-wrap">
+        <Link href="/" className="header-brand-wrap" style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}>
           {/* Elegant Lotus Outline SVG */}
           <svg
             className="brand-lotus-icon"
@@ -34,7 +35,7 @@ export const MinimalHeader: React.FC = () => {
             <span className="brand-name-h">Guanioma Pereira</span>
             <span className="brand-tagline-h">MASAJE · BIENESTAR · FORMACIÓN</span>
           </div>
-        </div>
+        </Link>
       </div>
     </header>
   );
