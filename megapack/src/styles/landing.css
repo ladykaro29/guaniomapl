@@ -30,9 +30,10 @@
   --c-text-light: #7b887e;
   --c-white: #ffffff;
 
-  /* Typography */
-  --font-serif: var(--font-serif), "Playfair Display", Georgia, serif;
-  --font-sans: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Typography - 100% Modern Google Roboto */
+  --font-roboto-stack: var(--font-roboto), "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-serif: var(--font-roboto-stack);
+  --font-sans: var(--font-roboto-stack);
 
   /* Radius & Shadows */
   --radius-xs: 6px;
@@ -49,7 +50,7 @@
 /* Base reset */
 html {
   scroll-behavior: smooth;
-  font-family: var(--font-sans);
+  font-family: var(--font-roboto-stack);
   background-color: var(--c-cream);
   color: var(--c-text-dark);
   line-height: 1.55;
@@ -62,6 +63,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   background-color: var(--c-cream);
+  font-family: var(--font-roboto-stack);
 }
 
 *, *::before, *::after {
@@ -74,7 +76,7 @@ img {
   display: block;
 }
 
-button {
+button, input, select, textarea {
   font-family: inherit;
 }
 
@@ -101,16 +103,18 @@ button {
   }
 }
 
-/* Typography Editorial Headers */
+/* Typography Headers - Uniform modern Roboto */
 .hero-main-title,
 .bundle-title,
 .center-title,
 .final-title-exact,
 .benefit-editorial-title,
 .audience-profile-title,
-.book-title {
-  font-family: var(--font-serif);
-  letter-spacing: -0.015em;
+.book-title,
+.hub-card-title,
+.advantages-subheading {
+  font-family: var(--font-roboto-stack);
+  letter-spacing: -0.02em;
 }
 
 /* Buttons */

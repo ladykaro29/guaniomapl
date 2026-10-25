@@ -1,18 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "@/styles/landing.css";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["600", "700", "800", "900"],
-  variable: "--font-serif",
+  weight: ["300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
   display: "swap",
 });
 
@@ -75,7 +68,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${plusJakartaSans.variable} ${playfairDisplay.variable}`}
+      className={roboto.variable}
     >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
