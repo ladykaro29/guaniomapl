@@ -129,12 +129,12 @@ export const HeroSection: React.FC = () => {
           <div className="hero-right-visual">
             <div className="hero-photo-container">
               <Image
-                src="/images/hero-therapist-exact.png"
+                src="/images/hero-therapist-hd.jpg"
                 alt="Profesional de masaje realizando técnica de terapia manual"
-                width={500}
-                height={610}
+                width={600}
+                height={800}
                 priority
-                sizes="(max-width: 768px) 100vw, 500px"
+                sizes="(max-width: 768px) 100vw, 600px"
               />
               <div className="hero-visual-card-floating">
                 <span className="floating-vol-tag">Biblioteca Digital</span>

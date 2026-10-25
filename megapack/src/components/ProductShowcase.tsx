@@ -31,11 +31,12 @@ export const ProductShowcase: React.FC = () => {
           {/* Left: 9 Books Mockup */}
           <div className="bundle-image-box">
             <Image
-              src="/images/bundle-mockup-exact.png"
-              alt="Colección editorial Masajes 9 en 1"
-              width={540}
-              height={320}
-              sizes="(max-width: 768px) 100vw, 540px"
+              src="/images/megapack-bundle-hd.jpg"
+              alt="Colección editorial Masajes 9 en 1 - Megapack Completo"
+              width={640}
+              height={360}
+              sizes="(max-width: 768px) 100vw, 640px"
+              priority
             />
           </div>
 

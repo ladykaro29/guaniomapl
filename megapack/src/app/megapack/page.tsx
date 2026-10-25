@@ -33,7 +33,7 @@ export default function MegapackPage() {
     name: "Masajes 9 en 1 — Colección Completa Digital",
     description:
       "Colección completa que abarca desde los puntos gatillo hasta el masaje tailandés, pasando por la anatomía y la rehabilitación. Técnicas dirigidas a profesionales y aficionados.",
-    image: "/images/bundle-mockup-exact.png",
+    image: "/images/megapack-bundle-hd.jpg",
     offers: {
       "@type": "Offer",
       url: AFFILIATE_CONFIG.primaryUrl,

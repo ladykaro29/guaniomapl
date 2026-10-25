@@ -48,10 +48,10 @@ export default function HomePage() {
 
               <div className="hub-card-media">
                 <Image
-                  src="/images/bundle-mockup-exact.png"
+                  src="/images/megapack-bundle-hd.jpg"
                   alt="Colección digital Masajes 9 en 1 de Guanioma Pereira"
-                  width={540}
-                  height={320}
+                  width={640}
+                  height={360}
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>

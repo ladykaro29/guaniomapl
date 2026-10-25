@@ -7,8 +7,8 @@ export const AudienceSection: React.FC = () => {
     {
       title: "Profesionales y Terapeutas",
       desc: "Masajistas, fisioterapeutas y terapeutas de spa que buscan enriquecer su práctica con técnicas avanzadas de tejidos profundos, masaje tailandés y manejo de puntos gatillo.",
-      image: "/images/card-masajista.png",
-      alt: "Masajista profesional realizando maniobra terapéutica",
+      image: "/images/audience-masajista-hd.jpg",
+      alt: "Masajista profesional realizando maniobra terapéutica de puntos gatillo",
       badge: "Práctica Profesional",
       icon: (
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -22,8 +22,8 @@ export const AudienceSection: React.FC = () => {
     {
       title: "Deporte y Rehabilitación",
       desc: "Entrenadores, preparadores físicos y personas activas enfocadas en la relación entre masaje y anatomía, descarga muscular y recuperación de traumatismos.",
-      image: "/images/card-trainer.png",
-      alt: "Acondicionamiento y recuperación deportiva",
+      image: "/images/hero-massage.jpg",
+      alt: "Acondicionamiento y recuperación deportiva y muscular",
       badge: "Enfoque Deportivo",
       icon: (
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -35,8 +35,8 @@ export const AudienceSection: React.FC = () => {
     {
       title: "Estudiantes y Aficionados",
       desc: "Guías paso a paso e ilustraciones claras para quienes desean aprender masajes relajantes, técnicas de autocuración y cuidados para el bienestar físico y emocional.",
-      image: "/images/card-student.png",
-      alt: "Estudiante y aficionado aprendiendo técnicas de masaje",
+      image: "/images/audience-students.jpg",
+      alt: "Estudiante y aficionado aprendiendo anatomía y técnicas de masaje",
       badge: "Formación y Autocuidado",
       icon: (
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

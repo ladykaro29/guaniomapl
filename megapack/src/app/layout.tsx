@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     siteName: "Guanioma Pereira | Megapack Masajes",
     images: [
       {
-        url: "/images/bundle-mockup-exact.png",
+        url: "/images/megapack-bundle-hd.jpg",
         width: 1200,
-        height: 630,
+        height: 675,
         alt: "Masajes 9 libros en 1 - Colección Digital Editorial",
       },
     ],
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Masajes: 9 libros en 1 | Colección Digital de Consulta",
     description:
       "Una colección de libros sobre masaje y temas relacionados para estudiantes y profesionales.",
-    images: ["/images/bundle-mockup-exact.png"],
+    images: ["/images/megapack-bundle-hd.jpg"],
   },
   robots: {
     index: true,
