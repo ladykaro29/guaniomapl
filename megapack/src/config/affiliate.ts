@@ -36,16 +36,16 @@ export const AFFILIATE_CONFIG = {
 };
 
 export const DRENAJE_CONFIG = {
-  // Direct affiliate checkout with offer code cyislg35 and affiliate ref N108180465M
-  primaryCheckoutUrl: "https://pay.hotmart.com/V84315374I?off=cyislg35&checkoutMode=10&src=DrenajeAfil&ref=N108180465M",
-  affiliateHotmartUrl: "https://go.hotmart.com/N108180465M?dp=1",
-  activeDestinationUrl: "https://pay.hotmart.com/V84315374I?off=cyislg35&checkoutMode=10&src=DrenajeAfil&ref=N108180465M",
+  // Affiliate link with bonus package (ap=abcf) at $24 USD
+  primaryCheckoutUrl: "https://go.hotmart.com/N108180465M?ap=abcf",
+  affiliateHotmartUrl: "https://go.hotmart.com/N108180465M?ap=abcf",
+  activeDestinationUrl: "https://go.hotmart.com/N108180465M?ap=abcf",
   productName: "Drenaje Linfático: Tu Secreto de Belleza",
   instructorName: "Ana María",
   instructorTitle: "Esteticista y Cosmetóloga (11+ años de experiencia)",
   priceOriginal: 119.90,
-  priceOffer: 10.00,
-  discountPercentage: "90% OFF",
+  priceOffer: 24.00,
+  discountPercentage: "80% OFF",
   guaranteeDays: 7,
 };
 
@@ -80,8 +80,8 @@ export function getVenezuelaWhatsAppUrl(source?: string): string {
 export function getDrenajeWhatsAppUrl(source?: string): string {
   const base = "https://wa.me/584147017139";
   const text = source 
-    ? `Hola, estoy en Venezuela y quiero inscribirme en el curso de Drenaje Linfático por $10 USD (vía ${source})`
-    : "Hola, estoy en Venezuela y quiero inscribirme en el curso de Drenaje Linfático por $10 USD";
+    ? `Hola, estoy en Venezuela y quiero inscribirme en el curso de Drenaje Linfático por $24 USD (vía ${source})`
+    : "Hola, estoy en Venezuela y quiero inscribirme en el curso de Drenaje Linfático por $24 USD";
   return `${base}?text=${encodeURIComponent(text)}`;
 }
 

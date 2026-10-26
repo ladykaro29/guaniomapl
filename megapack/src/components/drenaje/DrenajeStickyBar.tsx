@@ -21,7 +21,7 @@ export const DrenajeStickyBar: React.FC = () => {
   }, []);
 
   const handleClick = () => {
-    trackAffiliateClick("drenaje_sticky_cta", "STICKY CTA $10 USD");
+    trackAffiliateClick("drenaje_sticky_cta", "STICKY CTA $24 USD");
   };
 
   return (
@@ -31,7 +31,7 @@ export const DrenajeStickyBar: React.FC = () => {
     >
       <div className="dr-sticky-left">
         <span className="dr-sticky-title">Drenaje Linfático: Tu Secreto de Belleza</span>
-        <span className="dr-sticky-price">$10.00 USD <small style={{ fontSize: "0.75rem", color: "#b0c4be" }}>(90% OFF)</small></span>
+        <span className="dr-sticky-price">$24.00 USD <small style={{ fontSize: "0.75rem", color: "#b0c4be" }}>(80% OFF)</small></span>
       </div>
 
       <a
@@ -41,7 +41,7 @@ export const DrenajeStickyBar: React.FC = () => {
         className="dr-sticky-btn"
         onClick={handleClick}
       >
-        <span>ACCEDER AL CURSO POR $10 USD →</span>
+        <span>ACCEDER AL CURSO POR $24 USD →</span>
       </a>
     </aside>
   );

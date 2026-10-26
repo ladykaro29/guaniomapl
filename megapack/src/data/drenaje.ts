@@ -190,8 +190,8 @@ export const DRENAJE_TESTIMONIALS: DrenajeTestimonial[] = [
 
 export const DRENAJE_FAQS: DrenajeFaq[] = [
   {
-    question: "¿Cómo accedo al descuento especial de $10 USD?",
-    answer: "El cupón del 90% de descuento se encuentra preaplicado. Al hacer clic en cualquiera de los botones de la página, serás redirigida al checkout oficial de Hotmart donde verás el valor final de $10.00 USD (antes $119.90 USD).",
+    question: "¿Cómo accedo al descuento especial de $24 USD?",
+    answer: "El cupón del 80% de descuento se encuentra preaplicado. Al hacer clic en cualquiera de los botones de la página, serás redirigida al checkout oficial de Hotmart donde verás el valor final de $24.00 USD (antes $119.90 USD). Esta oferta incluye bonos adicionales exclusivos.",
   },
   {
     question: "¿El pago es 100% seguro?",
@@ -207,7 +207,7 @@ export const DRENAJE_FAQS: DrenajeFaq[] = [
   },
   {
     question: "¿Tengo acceso para siempre o vence?",
-    answer: "El acceso es de por vida (vitalicio). No hay mensualidades ni pagos ocultos. Pagas una única vez los $10 USD y el curso queda disponible para siempre en tu cuenta.",
+    answer: "El acceso es de por vida (vitalicio). No hay mensualidades ni pagos ocultos. Pagas una única vez los $24 USD y el curso queda disponible para siempre en tu cuenta.",
   },
   {
     question: "¿Hay alguna garantía si no cumple mis expectativas?",

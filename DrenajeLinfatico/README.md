@@ -7,9 +7,9 @@ Página de aterrizaje de alta conversión y recursos promocionales para el curso
 - **Nombre:** Drenaje Linfático: Tu Secreto de Belleza
 - **Instructora:** Ana María (Esteticista y Cosmetóloga con más de 11 años de experiencia en Bogotá)
 - **Precio Normal:** $119.90 USD
-- **Precio de Oferta:** $10.00 USD (90% OFF)
+- **Precio de Oferta:** $24.00 USD (80% OFF) — Incluye bonos adicionales
 - **Garantía:** 7 días incondicional por Hotmart
-- **Enlace de Checkout Directo:** `https://pay.hotmart.com/V84315374I?off=cyislg35&checkoutMode=10&src=DrenajeAfil&ref=N108180465M`
+- **Enlace de Checkout Directo:** `https://go.hotmart.com/N108180465M?ap=abcf`
 - **Atención WhatsApp Venezuela:** `+58 414-7017139`
 
 ## Integración en la Web Oficial

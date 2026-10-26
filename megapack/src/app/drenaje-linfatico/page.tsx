@@ -19,7 +19,7 @@ import { DrenajeStickyBar } from "@/components/drenaje/DrenajeStickyBar";
 export const metadata: Metadata = {
   title: "Drenaje Linfático: Tu Secreto de Belleza | Guanioma Pereira",
   description:
-    "Aprende el método natural de drenaje linfático y masajes moldeadores colombianos con Ana María. Desinflama, elimina toxinas y moldea tu figura con 90% de descuento ($10 USD).",
+    "Aprende el método natural de drenaje linfático y masajes moldeadores colombianos con Ana María. Desinflama, elimina toxinas y moldea tu figura con 80% de descuento ($24 USD). Incluye bonos adicionales exclusivos.",
   keywords: [
     "drenaje linfatico",
     "curso drenaje linfatico",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Drenaje Linfático: Tu Secreto de Belleza",
     description:
-      "Desbloquea el brillo natural de tu piel, reduce la hinchazón y moldea tu silueta con técnicas profesionales sin dolor por solo $10 USD.",
+      "Desbloquea el brillo natural de tu piel, reduce la hinchazón y moldea tu silueta con técnicas profesionales sin dolor por solo $24 USD.",
     images: [
       {
         url: "/images/drenaje/hero_mockup.png",
@@ -53,7 +53,7 @@ export default function DrenajePage() {
       {/* Top Notification Bar */}
       <div className="dr-urgent-bar">
         <span className="dr-urgent-pulse" aria-hidden="true" />
-        <span>¡OFERTA ESPECIAL 90% OFF DISPONIBLE SOLO POR HOY · CUPÓN ACTIVADO A $10.00 USD!</span>
+        <span>¡OFERTA ESPECIAL 80% OFF DISPONIBLE SOLO POR HOY · CUPÓN ACTIVADO A $24.00 USD!</span>
       </div>
 
       <MinimalHeader />

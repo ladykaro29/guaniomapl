@@ -10,11 +10,11 @@ export const DrenajePricing: React.FC = () => {
   const venezuelaWaUrl = getDrenajeWhatsAppUrl("pricing_venezuela");
 
   const handleCheckoutClick = () => {
-    trackAffiliateClick("drenaje_pricing_cta", "QUIERO EL CURSO POR $10 USD");
+    trackAffiliateClick("drenaje_pricing_cta", "QUIERO EL CURSO POR $24 USD");
   };
 
   const handleWhatsAppClick = () => {
-    trackAffiliateClick("drenaje_wa_venezuela", "WHATSAPP VENEZUELA $10 USD");
+    trackAffiliateClick("drenaje_wa_venezuela", "WHATSAPP VENEZUELA $24 USD");
   };
 
   return (
@@ -23,10 +23,10 @@ export const DrenajePricing: React.FC = () => {
         <div style={{ textAlign: "center", marginBottom: "36px" }}>
           <span className="dr-section-badge">Inscripción Oficial con Descuento</span>
           <h2 className="dr-section-title">
-            Comienza Hoy Tu Transformación por Solo $10 USD
+            Comienza Hoy Tu Transformación por Solo $24 USD
           </h2>
           <p className="dr-section-subtitle" style={{ margin: "0 auto" }}>
-            Aprovecha el 90% de descuento por tiempo limitado antes de que el valor regrese a su tarifa habitual de $119.90 USD:
+            Aprovecha el 80% de descuento por tiempo limitado antes de que el valor regrese a su tarifa habitual de $119.90 USD:
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export const DrenajePricing: React.FC = () => {
             <div className="dr-price-display-huge">
               <span className="dr-old-price-huge">Valor total: $119.90 USD</span>
               <div className="dr-final-price-huge">
-                $10.00 <span>USD</span>
+                $24.00 <span>USD</span>
               </div>
               <p className="dr-price-caption">
                 Pago único · Sin cobros mensuales · Acceso ilimitado de por vida
@@ -94,7 +94,7 @@ export const DrenajePricing: React.FC = () => {
               style={{ maxWidth: "100%" }}
             >
               <span className="dr-btn-cta-text">
-                ¡INSCRIBIRME AHORA POR $10 USD! →
+                ¡INSCRIBIRME AHORA POR $24 USD! →
               </span>
               <span className="dr-btn-sub">Garantía incondicional de 7 días respaldada por Hotmart®</span>
             </a>

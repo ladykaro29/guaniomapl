@@ -106,7 +106,7 @@ export default function HomePage() {
             {/* Card 2: Drenaje Linfático: Tu Secreto de Belleza */}
             <article className="hub-card hub-card-featured">
               <div className="hub-card-badge-row">
-                <span className="badge-tag badge-tag-terracotta">OFERTA 90% OFF · $10 USD</span>
+                <span className="badge-tag badge-tag-terracotta">OFERTA 80% OFF · $24 USD</span>
                 <span className="badge-tag badge-tag-green">CURSO EN VIDEO HD</span>
               </div>
 
@@ -162,7 +162,7 @@ export default function HomePage() {
                       <polyline points="12 5 19 12 12 19" />
                     </svg>
                   </div>
-                  <span className="btn-sub-caption">Inscripción promocional a $10.00 USD (Antes $119.90 USD)</span>
+                  <span className="btn-sub-caption">Inscripción promocional a $24.00 USD (Antes $119.90 USD)</span>
                 </Link>
               </div>
             </article>

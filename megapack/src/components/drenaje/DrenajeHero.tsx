@@ -55,8 +55,8 @@ export const DrenajeHero: React.FC = () => {
               <div>
                 <span className="dr-price-old">Precio regular: $119.90 USD</span>
                 <div style={{ display: "flex", alignItems: "baseline", gap: "8px" }}>
-                  <span className="dr-price-new">$10.00 USD</span>
-                  <span className="dr-price-discount">90% DESCUENTO HOY</span>
+                  <span className="dr-price-new">$24.00 USD</span>
+                  <span className="dr-price-discount">80% DESCUENTO HOY</span>
                 </div>
               </div>
             </div>
