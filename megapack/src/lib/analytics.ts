@@ -22,7 +22,11 @@ export type TrackingLocation =
   | "trust_cta"
   | "final_cta"
   | "sticky_mobile_cta"
-  | "footer_link";
+  | "footer_link"
+  | "drenaje_hero_cta"
+  | "drenaje_pricing_cta"
+  | "drenaje_wa_venezuela"
+  | "drenaje_sticky_cta";
 
 export function trackAffiliateClick(location: TrackingLocation, label: string = "Click Hotmart CTA") {
   const eventPayload = {

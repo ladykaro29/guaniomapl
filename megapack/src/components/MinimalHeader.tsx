@@ -4,7 +4,7 @@ import Link from "next/link";
 export const MinimalHeader: React.FC = () => {
   return (
     <header className="site-header" role="banner">
-      <div className="lp-container">
+      <div className="lp-container" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "16px" }}>
         <Link href="/" className="header-brand-wrap" style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}>
           {/* Elegant Lotus Outline SVG */}
           <svg
@@ -36,6 +36,54 @@ export const MinimalHeader: React.FC = () => {
             <span className="brand-tagline-h">MASAJE · BIENESTAR · FORMACIÓN</span>
           </div>
         </Link>
+
+        {/* Global Navigation links */}
+        <nav aria-label="Navegación principal" style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
+          <Link
+            href="/"
+            style={{
+              fontSize: "0.88rem",
+              fontWeight: 600,
+              color: "var(--c-dark-green)",
+              textDecoration: "none",
+              padding: "6px 12px",
+              borderRadius: "var(--radius-pill)",
+              transition: "background 0.2s ease",
+            }}
+          >
+            Inicio
+          </Link>
+          <Link
+            href="/megapack"
+            style={{
+              fontSize: "0.88rem",
+              fontWeight: 600,
+              color: "var(--c-dark-green)",
+              textDecoration: "none",
+              padding: "6px 12px",
+              borderRadius: "var(--radius-pill)",
+              transition: "background 0.2s ease",
+            }}
+          >
+            Masajes 9 en 1
+          </Link>
+          <Link
+            href="/drenaje-linfatico"
+            style={{
+              fontSize: "0.88rem",
+              fontWeight: 700,
+              color: "#ffffff",
+              backgroundColor: "var(--c-terracotta)",
+              textDecoration: "none",
+              padding: "6px 16px",
+              borderRadius: "var(--radius-pill)",
+              boxShadow: "0 2px 8px rgba(185, 87, 60, 0.25)",
+              transition: "transform 0.2s ease, filter 0.2s ease",
+            }}
+          >
+            Drenaje Linfático ($10 USD)
+          </Link>
+        </nav>
       </div>
     </header>
   );

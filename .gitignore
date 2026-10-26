@@ -38,5 +38,11 @@ Thumbs.db
 # TypeScript & Next build artifacts
 *.tsbuildinfo
 next-env.d.ts
+
+# Scratch / temporary scripts
+scratch_*
+parse_drenaje.js
+download_drenaje_assets.js
+
 **/*.tsbuildinfo
 **/next-env.d.ts

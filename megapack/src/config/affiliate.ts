@@ -32,18 +32,39 @@ export const AFFILIATE_CONFIG = {
 
   // Disclaimers
   affiliateDisclosure:
-    "Esta página es un escaparate informativo y promocional independiente gestionado por Guanioma Pereira (@guniomapl). No somos los autores, editores ni productores directos del producto 'Masajes 9 en 1'. La compra, facturación, soporte y garantía se completan y gestionan exclusivamente a través de la plataforma oficial de Hotmart.",
+    "Esta página es un escaparate informativo y promocional independiente gestionado por Guanioma Pereira (@guniomapl). No somos los autores, editores ni productores directos de los productos presentados. La compra, facturación, soporte y garantía se completan y gestionan exclusivamente a través de la plataforma oficial de Hotmart.",
+};
+
+export const DRENAJE_CONFIG = {
+  // Direct affiliate checkout with offer code cyislg35 and affiliate ref N108180465M
+  primaryCheckoutUrl: "https://pay.hotmart.com/V84315374I?off=cyislg35&checkoutMode=10&src=DrenajeAfil&ref=N108180465M",
+  affiliateHotmartUrl: "https://go.hotmart.com/N108180465M?dp=1",
+  activeDestinationUrl: "https://pay.hotmart.com/V84315374I?off=cyislg35&checkoutMode=10&src=DrenajeAfil&ref=N108180465M",
+  productName: "Drenaje Linfático: Tu Secreto de Belleza",
+  instructorName: "Ana María",
+  instructorTitle: "Esteticista y Cosmetóloga (11+ años de experiencia)",
+  priceOriginal: 119.90,
+  priceOffer: 10.00,
+  discountPercentage: "90% OFF",
+  guaranteeDays: 7,
 };
 
 /**
- * Helper to get the purchase affiliate link for all CTA buttons.
+ * Helper to get the purchase affiliate link for Megapack buttons.
  */
 export function getAffiliateUrl(_sourceLocation?: string): string {
   return AFFILIATE_CONFIG.activeDestinationUrl;
 }
 
 /**
- * Helper to get the WhatsApp link for users in Venezuela.
+ * Helper to get the purchase affiliate link for Drenaje Linfático buttons.
+ */
+export function getDrenajeAffiliateUrl(_sourceLocation?: string): string {
+  return DRENAJE_CONFIG.activeDestinationUrl;
+}
+
+/**
+ * Helper to get the WhatsApp link for users in Venezuela for Megapack.
  */
 export function getVenezuelaWhatsAppUrl(source?: string): string {
   const base = "https://wa.me/584147017139";
@@ -52,3 +73,15 @@ export function getVenezuelaWhatsAppUrl(source?: string): string {
     : "Hola, estoy en Venezuela y quiero adquirir el Megapack Masajes 9 en 1";
   return `${base}?text=${encodeURIComponent(text)}`;
 }
+
+/**
+ * Helper to get the WhatsApp link for users in Venezuela for Drenaje Linfático.
+ */
+export function getDrenajeWhatsAppUrl(source?: string): string {
+  const base = "https://wa.me/584147017139";
+  const text = source 
+    ? `Hola, estoy en Venezuela y quiero inscribirme en el curso de Drenaje Linfático por $10 USD (vía ${source})`
+    : "Hola, estoy en Venezuela y quiero inscribirme en el curso de Drenaje Linfático por $10 USD";
+  return `${base}?text=${encodeURIComponent(text)}`;
+}
+
