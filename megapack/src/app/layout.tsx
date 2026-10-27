@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
+import { FacebookPixel } from "@/components/FacebookPixel";
 import "@/styles/landing.css";
 
 const roboto = Roboto({
@@ -16,7 +17,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://guaniomapl.com"),
+  metadataBase: new URL("https://guaniomapl.blog"),
   title: "Masajes 9 en 1 | Colección Completa Digital",
   description:
     "Colección completa que abarca desde los puntos gatillo hasta el masaje tailandés, anatomía y rehabilitación. Técnicas dirigidas a profesionales y aficionados.",
@@ -58,6 +59,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  other: {
+    "facebook-domain-verification": "fkvvjk30ma24i7q2chi073k6cr012y",
+  },
 };
 
 export default function RootLayout({
@@ -73,7 +77,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body>{children}</body>
+      <body>
+        <FacebookPixel />
+        {children}
+      </body>
     </html>
   );
 }

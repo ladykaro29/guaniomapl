@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Masajes 9 en 1 — Colección Completa Digital",
     description:
       "Colección completa que abarca desde los puntos gatillo hasta el masaje tailandés, pasando por anatomía y rehabilitación.",
-    url: "https://guaniomapl.com/megapack",
+    url: "https://guaniomapl.blog/megapack",
   },
 };
 

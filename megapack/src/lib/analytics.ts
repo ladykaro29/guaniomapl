@@ -51,11 +51,24 @@ export function trackAffiliateClick(location: TrackingLocation, label: string = 
     });
   }
 
-  // 3. Meta Pixel InitiateCheckout or Custom Event
+  // 3. Meta Pixel InitiateCheckout & Custom Event
   if (typeof window !== "undefined" && typeof window.fbq === "function") {
+    const isDrenaje = location.startsWith("drenaje_");
+    const productName = isDrenaje ? "Drenaje Linfático: Tu Secreto de Belleza" : "Masajes 9 libros en 1";
+    const value = isDrenaje ? 24.0 : 10.8;
+
+    window.fbq("track", "InitiateCheckout", {
+      content_name: productName,
+      content_category: "Cursos Digitales",
+      value: value,
+      currency: "USD",
+    });
+
     window.fbq("trackCustom", "HotmartAffiliateClick", {
       location: location,
-      product: "Masajes 9 libros en 1",
+      product: productName,
+      value: value,
+      currency: "USD",
     });
   }
 
