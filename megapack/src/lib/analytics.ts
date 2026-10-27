@@ -73,9 +73,12 @@ export function trackAffiliateClick(location: TrackingLocation, label: string = 
       });
     }
 
-    window.fbq("trackCustom", "HotmartAffiliateClick", {
-      location: location,
+    // Evento personalizado solicitado: AffiliateClick
+    window.fbq("trackCustom", "AffiliateClick", {
+      content_name: productName,
       product: productName,
+      destination: isWhatsApp ? "WhatsApp" : "Hotmart",
+      click_location: location,
       value: value,
       currency: "USD",
     });
