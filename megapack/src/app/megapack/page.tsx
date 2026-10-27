@@ -13,6 +13,7 @@ import { MinimalFooter } from "@/components/MinimalFooter";
 import { StickyMobileCTA } from "@/components/StickyMobileCTA";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AFFILIATE_CONFIG } from "@/config/affiliate";
+import { MetaViewContent } from "@/components/MetaViewContent";
 
 export const metadata: Metadata = {
   title: "Masajes 9 en 1 — Colección Completa Digital | Guanioma Pereira",
@@ -57,6 +58,12 @@ export default function MegapackPage() {
       <MinimalHeader />
 
       <main id="main-content">
+        <MetaViewContent
+          contentName="Masajes 9 en 1 — Colección Completa Digital"
+          contentId="megapack-masajes-9-1"
+          value={10.8}
+          currency="USD"
+        />
         {/* SECCIÓN 01 — HERO DE ALTA CONVERSIÓN */}
         <HeroSection />
 

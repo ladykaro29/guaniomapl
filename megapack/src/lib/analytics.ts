@@ -51,18 +51,27 @@ export function trackAffiliateClick(location: TrackingLocation, label: string = 
     });
   }
 
-  // 3. Meta Pixel InitiateCheckout & Custom Event
+  // 3. Meta Pixel Events
   if (typeof window !== "undefined" && typeof window.fbq === "function") {
     const isDrenaje = location.startsWith("drenaje_");
+    const isWhatsApp = location.includes("wa") || location.includes("whatsapp");
     const productName = isDrenaje ? "Drenaje Linfático: Tu Secreto de Belleza" : "Masajes 9 libros en 1";
     const value = isDrenaje ? 24.0 : 10.8;
 
-    window.fbq("track", "InitiateCheckout", {
-      content_name: productName,
-      content_category: "Cursos Digitales",
-      value: value,
-      currency: "USD",
-    });
+    if (isWhatsApp) {
+      window.fbq("track", "Contact", {
+        content_name: `${productName} - WhatsApp Consulta`,
+        value: value,
+        currency: "USD",
+      });
+    } else {
+      window.fbq("track", "InitiateCheckout", {
+        content_name: productName,
+        content_category: "Cursos Digitales",
+        value: value,
+        currency: "USD",
+      });
+    }
 
     window.fbq("trackCustom", "HotmartAffiliateClick", {
       location: location,

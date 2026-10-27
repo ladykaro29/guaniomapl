@@ -15,6 +15,7 @@ import { DrenajePricing } from "@/components/drenaje/DrenajePricing";
 import { DrenajeTestimonials } from "@/components/drenaje/DrenajeTestimonials";
 import { DrenajeFaq } from "@/components/drenaje/DrenajeFaq";
 import { DrenajeStickyBar } from "@/components/drenaje/DrenajeStickyBar";
+import { MetaViewContent } from "@/components/MetaViewContent";
 
 export const metadata: Metadata = {
   title: "Drenaje Linfático: Tu Secreto de Belleza | Guanioma Pereira",
@@ -59,6 +60,12 @@ export default function DrenajePage() {
       <MinimalHeader />
 
       <main id="main-content">
+        <MetaViewContent
+          contentName="Drenaje Linfático: Tu Secreto de Belleza"
+          contentId="drenaje-linfatico-24"
+          value={24.0}
+          currency="USD"
+        />
         <DrenajeHero />
         <DrenajePainPoints />
         <DrenajeBenefits />
